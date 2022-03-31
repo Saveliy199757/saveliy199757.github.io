@@ -813,8 +813,6 @@ body.light hr.separator {
 
 .portfolio .slideshow ul > li.show {
     visibility: visible;
-    overflow: scroll;
-    height: inherit;
 }
 
 .portfolio .slideshow ul > li:after {
