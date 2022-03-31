@@ -1,5 +1,5 @@
 /**
- * jquery.hoverdir.js v1.1.0
+ * jquery.hoverdir.javascript v1.1.0
  * http://www.codrops.com
  *
  * Licensed under the MIT license.

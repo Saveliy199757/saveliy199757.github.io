@@ -4,8 +4,8 @@
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('jquery'), require('popper.js')) :
-        typeof define === 'function' && define.amd ? define(['exports', 'jquery', 'popper.js'], factory) :
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('jquery'), require('popper.javascript')) :
+        typeof define === 'function' && define.amd ? define(['exports', 'jquery', 'popper.javascript'], factory) :
             (global = global || self, factory(global.bootstrap = {}, global.jQuery, global.Popper));
 }(this, (function (exports, $, Popper) { 'use strict';
 
@@ -85,7 +85,7 @@
 
     /**
      * --------------------------------------------------------------------------
-     * Bootstrap (v4.4.1): util.js
+     * Bootstrap (v4.4.1): util.javascript
      * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
      * --------------------------------------------------------------------------
      */
@@ -1714,7 +1714,7 @@
 
                 if (showEvent.isDefaultPrevented()) {
                     return;
-                } // Disable totally Popper.js for Dropdown in Navbar
+                } // Disable totally Popper.javascript for Dropdown in Navbar
 
 
                 if (!this._inNavbar && usePopper) {
@@ -1723,7 +1723,7 @@
                      * Popper - https://popper.js.org
                      */
                     if (typeof Popper === 'undefined') {
-                        throw new TypeError('Bootstrap\'s dropdowns require Popper.js (https://popper.js.org/)');
+                        throw new TypeError('Bootstrap\'s dropdowns require Popper.javascript (https://popper.js.org/)');
                     }
 
                     var referenceElement = this._element;
@@ -1895,7 +1895,7 @@
                             boundariesElement: this._config.boundary
                         }
                     }
-                }; // Disable Popper.js if we have a static display
+                }; // Disable Popper.javascript if we have a static display
 
                 if (this._config.display === 'static') {
                     popperConfig.modifiers.applyStyle = {
@@ -2532,7 +2532,7 @@
                 }
             } // ----------------------------------------------------------------------
             // the following methods are used to handle overflowing modals
-            // todo (fat): these should probably be refactored out of modal.js
+            // todo (fat): these should probably be refactored out of modal.javascript
             // ----------------------------------------------------------------------
             ;
 
@@ -2713,7 +2713,7 @@
 
     /**
      * --------------------------------------------------------------------------
-     * Bootstrap (v4.4.1): tools/sanitizer.js
+     * Bootstrap (v4.4.1): tools/sanitizer.javascript
      * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
      * --------------------------------------------------------------------------
      */
@@ -2931,7 +2931,7 @@
         function () {
             function Tooltip(element, config) {
                 if (typeof Popper === 'undefined') {
-                    throw new TypeError('Bootstrap\'s tooltips require Popper.js (https://popper.js.org/)');
+                    throw new TypeError('Bootstrap\'s tooltips require Popper.javascript (https://popper.js.org/)');
                 } // private
 
 
@@ -3633,7 +3633,7 @@
             };
 
             _proto.setContent = function setContent() {
-                var $tip = $(this.getTipElement()); // We use append for html objects to maintain js events
+                var $tip = $(this.getTipElement()); // We use append for html objects to maintain javascript events
 
                 this.setElementContent($tip.find(Selector$7.TITLE), this.getTitle());
 
@@ -4518,4 +4518,4 @@
     Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
-//# sourceMappingURL=bootstrap.js.map
+//# sourceMappingURL=bootstrap.javascript.map
